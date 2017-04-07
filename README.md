@@ -21,7 +21,8 @@
 
 4、basic下面定义的基本请求、响应等数据结构
 
-5、每个组件功能分别起一个协程来处理，通过chan来传递消息
+5、每个组件功能分别起一个协程来处理，通过定义的四个chan来传递消息
+
        Reqchan chan *basic.Request  
        
        Reschan chan *basic.Response
