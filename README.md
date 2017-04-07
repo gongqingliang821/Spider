@@ -23,9 +23,12 @@
 
 5、每个组件功能分别起一个协程来处理，通过chan来传递消息
        Reqchan chan *basic.Request  
-       Reschan chan *basic.Response  	
-       NextUrlchan chan basic.NextUrl
-	     Itemchan chan map[string]interface{}
        
-6.引用第三方库github.com/PuerkitoBio/goquery
+       Reschan chan *basic.Response
+       
+       NextUrlchan chan basic.NextUrl
+       
+      Itemchan chan map[string]interface{}
+       
+6.analy/analy.go中引用第三方库github.com/PuerkitoBio/goquery来分析网页
        
